@@ -8,7 +8,7 @@ How to use:
 	Pass the image, width in bits of the memory, the depth of the memory, how many bits per pixel for the memory, and color format. Color format is either 0 for Grayscale or 1 for RGB.
 	RGB color will set the RGB elements of a pixel as consecutive memory locations. 
 
-		EX: im2mif tester.bmp 8 8192 2 1
+		EX: img2mif tester.bmp 8 8192 2 1
 
 If the image is to large for the memory it will fill up as much of the memory as possible then give a warning.
 If the image does not take up all the space the other locations will be filled with 0.
