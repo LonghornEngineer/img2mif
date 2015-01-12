@@ -4,7 +4,7 @@
 	
 Converts images to Altera Memory Initialization File (.mif) format.
 	
-How to use:
+How to use:</br>
 	Pass the image, width in bits of the memory, the depth of the memory, how many bits per pixel for the memory, and color format. Color format is either 0 for Grayscale or 1 for RGB.
 	RGB color will set the RGB elements of a pixel as consecutive memory locations. 
 		
@@ -23,6 +23,8 @@ If the image does not take up all the space the other locations will be filled w
 So far RGB is currently not implemented and a couple sections are untested but should work. Seems bitmaps are the best choice as file inputs. 
 Uses the [stb image library] (https://github.com/nothings/stb) for opening up images and getting the pixel data. Included is a copy of stb_image.h that I used for building.
 
-Author: Parker Dillmann
+Memory Initialization Format (.mif) file documentation can be found [here] (http://quartushelp.altera.com/9.1/mergedProjects/reference/glossary/def_mif.htm).
+
+Author: Parker Dillmann</br>
 Website: [Longhorn Engineer] (www.longhornengineer.com)
 ***
